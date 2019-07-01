@@ -20,6 +20,7 @@ public:
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
+	void OpenDoor();
 
 public:	
 	// Called every frame
@@ -31,5 +32,7 @@ private:
 	UPROPERTY(EditAnywhere)
 	ATriggerVolume* PressurePlate;
 
+  	UPROPERTY(EditAnywhere)
+	AActor* ActorThatOpens;
 		
 };
